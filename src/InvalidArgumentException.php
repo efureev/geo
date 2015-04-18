@@ -1,11 +1,11 @@
 <?php
 
-namespace common\components\geo;
+namespace feugene\geo;
 
 /**
  * Class InvalidArgumentException
  *
- * @package common\components\geo
+ * @package feugene\geo
  */
 class InvalidArgumentException extends GeoException
 {

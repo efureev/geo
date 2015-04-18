@@ -1,11 +1,11 @@
 <?php
 
-namespace common\components\geo;
+namespace feugene\geo;
 
 /**
  * Class Coordinate
  *
- * @package common\components\geo
+ * @package feugene\geo
  */
 class Coordinate
 {
@@ -125,7 +125,7 @@ class Coordinate
 	 *
 	 * @return array An array of coordinate in decimal degree.
 	 *
-	 * @throws InvalidArgumentException
+	 * @throws \InvalidArgumentException
 	 *
 	 * @see http://en.wikipedia.org/wiki/Geographic_coordinate_conversion
 	 */

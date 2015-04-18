@@ -1,6 +1,6 @@
 <?php
 
-namespace common\components\geo;
+namespace feugene\geo;
 
 class GeoException extends Exception
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace common\components\geo;
+namespace feugene\geo;
 
 /**
  * Class PointCollection
  *
- * @package common\components\geo
+ * @package feugene\geo
  */
 class PointCollection extends CoordinateCollection
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace common\components\geo;
+namespace feugene\geo;
 
 /**
  * Class Point
  *
- * @package common\components\geo
+ * @package feugene\geo
  */
 
 class Point extends Coordinate

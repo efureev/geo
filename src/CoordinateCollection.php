@@ -1,13 +1,13 @@
 <?php
 
-namespace common\components\geo;
+namespace feugene\geo;
 
 /**
  * Class CoordinateCollection
  *
- * @package common\components\geo
+ * @package feugene\geo
  */
-class CoordinateCollection implements \Countable, \IteratorAggregate, \ArrayAccess, \JsonSerializable
+class CoordinateCollection implements \IteratorAggregate, \JsonSerializable
 {
 	/**
 	 * @var Coordinate[]
@@ -50,49 +50,32 @@ class CoordinateCollection implements \Countable, \IteratorAggregate, \ArrayAcce
 
 		return json_encode($res);
 	}
-	/**
-	 * {@inheritDoc}
-	 */
+
 	public function offsetExists($offset)
 	{
 		return isset($this->elements[$offset]) || array_key_exists($offset, $this->elements);
 	}
 
-	/**
-	 * {@inheritDoc}
-	 */
 	public function offsetGet($offset)
 	{
 		return $this->get($offset);
 	}
 
-	/**
-	 * {@inheritDoc}
-	 */
 	public function offsetSet($offset, $value)
 	{
 		$this->set($offset, $value);
 	}
 
-	/**
-	 * {@inheritDoc}
-	 */
 	public function offsetUnset($offset)
 	{
 		return $this->remove($offset);
 	}
 
-	/**
-	 * {@inheritDoc}
-	 */
 	public function count()
 	{
 		return count($this->elements);
 	}
 
-	/**
-	 * {@inheritDoc}
-	 */
 	public function getIterator()
 	{
 		return new \ArrayIterator($this->elements);
