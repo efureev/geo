@@ -2,7 +2,7 @@
 
 namespace feugene\geo;
 
-class GeoException extends Exception
+class GeoException extends \Exception
 {
 
 }

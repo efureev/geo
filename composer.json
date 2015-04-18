@@ -1,13 +1,18 @@
 {
-  "name": "fuegene/geo",
-  "version":"1.0.0",
-  "description" : "geo library",
-  "homepage": "https://github.com/efureev/geo",
-  "license" : "MIT",
-  "require" : {
-    "php" : ">=5.4.0"
-  },
-  "autoload": {
-    "psr-4" : { "geo\\" : "src/" }
-  }
+    "name": "fuegene/geo",
+    "version":"1.0.0",
+    "homepage": "https://github.com/efureev/geo",
+    "license" : "MIT",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "authors": [
+        {
+            "name": "eFureev",
+            "email": "info@feugene.org"
+        }
+    ],
+    "autoload": {
+      "psr-4" : { "fuegene\\geo\\" : "src/" }
+    }
 }
