@@ -1,5 +1,5 @@
 {
-    "name": "fuegene/geo",
+    "name": "feugene/geo",
     "version":"1.0.0",
     "homepage": "https://github.com/efureev/geo",
     "license" : "MIT",
@@ -13,6 +13,6 @@
         }
     ],
     "autoload": {
-      "psr-4" : { "fuegene\\geo\\" : "src/" }
+      "psr-4" : { "feugene\\geo\\" : "src/" }
     }
 }
